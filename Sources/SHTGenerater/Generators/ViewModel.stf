@@ -1,0 +1,25 @@
+//
+//  {{ resource.name }}ViewModel.swift
+//
+
+import IGListKit
+import Kingfisher
+import RxCocoa
+import RxSwift
+
+class {{ resource.name }}ViewModel: ViewModel, ServiceContainer {
+    var disposeBag = DisposeBag()
+    enum Action {
+        case <# action #>
+    }
+    class State: Output {
+        required init() {}
+    }
+
+    func mutate(action: Action, state: State) {
+        switch action{
+            case .<# action #> :
+                break
+        }
+    }
+}

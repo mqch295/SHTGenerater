@@ -1,0 +1,46 @@
+//
+//  {{ resource.name }}SectionController.swift
+//
+
+import UIKit
+import IGListKit
+
+class {{ resource.name }}SectionController: ListBindingSectionController<ListDiffable>{
+    override init() {
+        super.init()
+        self.dataSource = self
+        self.selectionDelegate = self
+    }
+}
+extension {{ resource.name }}SectionController: ListBindingSectionControllerDataSource{
+    func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, viewModelsFor object: Any) -> [ListDiffable] {
+        return <# [ListDiffable] #>
+    }
+
+    func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, cellForViewModel viewModel: Any, at index: Int) -> UICollectionViewCell & ListBindable {
+
+        return <# Cell #>
+    }
+
+    func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, sizeForViewModel viewModel: Any, at index: Int) -> CGSize {
+        guard let width = self.collectionContext?.containerSize.width else { return .zero }
+        return <# CGSize #>
+    }
+}
+extension {{ resource.name }}SectionController: ListBindingSectionControllerSelectionDelegate {
+    func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, didUnhighlightItemAt index: Int, viewModel: Any) {
+
+    }
+
+    func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, didHighlightItemAt index: Int, viewModel: Any) {
+
+    }
+
+    func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, didDeselectItemAt index: Int, viewModel: Any) {
+
+    }
+
+    func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, didSelectItemAt index: Int, viewModel: Any) {
+
+    }
+}

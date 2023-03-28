@@ -1,0 +1,9 @@
+//
+//  {{ resource.name }}Model.swift
+//
+
+import Foundation
+
+struct {{ resource.name }}Model: Codable {
+
+}

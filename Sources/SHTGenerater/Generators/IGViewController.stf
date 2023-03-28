@@ -1,0 +1,32 @@
+//
+//  {{ resource.name }}ViewController.swift
+//
+
+import UIKit
+
+class {{ resource.name }}ViewController: BaseIGListViewController, ViewType {
+    typealias TargetViewModel = {{ resource.name }}ViewModel
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+    }
+    override open func setupConstraints() {
+
+    }
+
+    func bind(viewModel: TargetViewModel) {
+
+    }
+
+}
+
+extension {{ resource.name }}ViewController {
+    override func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
+        return <# SectionController #>
+    }
+
+    override func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
+        return <# [ListDiffable] #>
+    }
+}
+

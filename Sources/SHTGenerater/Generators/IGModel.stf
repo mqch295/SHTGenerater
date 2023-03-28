@@ -1,0 +1,21 @@
+//
+//  {{ resource.name }}Model.swift
+//
+
+import Foundation
+import IGListKit
+
+class {{ resource.name }}Model: Codable {
+
+}
+extension {{ resource.name }}Model: ListDiffable{
+    func diffIdentifier() -> NSObjectProtocol {
+        return <# NSObjectProtocol #>
+    }
+
+    func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+        guard let obj = object as? {{ resource.name }}Model else { return false }
+        return <# BoolValue #>
+    }
+}
+

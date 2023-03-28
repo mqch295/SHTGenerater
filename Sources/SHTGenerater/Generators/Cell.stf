@@ -1,0 +1,20 @@
+//
+//  {{ resource.name }}Cell.swift
+//
+
+import UIKit
+import Then
+import SnapKit
+
+class {{ resource.name }}Cell: BaseCollectionViewCell{
+    override func setupUI() {
+
+    }
+    override func configUI() {
+
+    }
+    override func setupConstraints() {
+
+    }
+
+}

@@ -1,0 +1,28 @@
+//
+//  {{ resource.name }}Cell.swift
+//
+
+import UIKit
+import Then
+import SnapKit
+import IGListKit
+
+class {{ resource.name }}Cell: BaseCollectionViewCell{
+    override func setupUI() {
+
+    }
+    override func configUI() {
+
+    }
+    override func setupConstraints() {
+
+    }
+
+}
+
+extension {{ resource.name }}Cell: ListBindable{
+    func bindViewModel(_ viewModel: Any) {
+
+    }
+}
+
